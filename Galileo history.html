@@ -1,0 +1,162 @@
+<style>
+html {
+  /* Setting a base font size of 10px give us easier rem calculations
+     Info: 1rem === 10px, 1.5rem === 15px, 2rem === 20px and so forth
+   */
+  font-size: 10px;
+}
+body {
+  /* Native font stack https://getbootstrap.com/docs/4.2/content/reboot/#native-font-stack */
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto',
+    'Helvetica Neue', Arial, sans-serif;
+  font-size: 1.6rem;
+  line-height: 1.5;
+  text-align: center;
+  color: #333;
+  margin: 0;
+}
+h1 {
+  font-size: 4.2rem;
+  margin-bottom: 0;
+}
+@media (max-width: 460px) {
+  h1 {
+    font-size: 4rem;
+    line-height: 1.3;
+    
+  }
+}
+
+#main {
+  margin: 30px 8px;
+  padding: 0px;
+  border-radius: 5px;
+  background: #F5F2E1;
+}
+@media (max-width: 460px) {
+   #main {
+    margin: 0;
+  }
+}
+
+img {
+  max-width: 100%;
+  display: block;
+  height: auto;
+  margin: 0 auto;
+}
+#img-div {
+  background: #F2F3F4;
+  padding: 10px;
+  margin: 0;
+}
+
+#img-caption {
+  margin: 15px 0 5px 0;
+}
+
+@media (max-width: 460px) {
+  #img-caption {
+    font-size: 1.5rem;
+  }
+}
+
+#headline {
+  margin: 50px 0;
+  text-align: center;
+}
+
+ul {
+  max-width: 600px;
+  margin: 0 auto 50px auto;
+  text-align: left;
+  line-height: 1.8;
+}
+
+li {
+  margin: 18px 0;
+}
+
+blockquote {
+  font-style: italic;
+  max-width: 700px;
+  margin: 0 auto 50px auto;
+  text-align: center;
+  background-color: #FFFFFF
+}
+a {
+  color: #477ca7;
+}
+
+a:hover {
+  color: #74638f;
+}
+
+#Register {
+  background-color: #B5406C;
+  color:#000000;
+  
+}
+#Register:hover {
+  color: #FFFFFF;
+}
+p {
+  text-align: center;
+  font-style: italic;
+}
+</style>
+
+
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta>
+            <title>Galileokohrex.com</title>
+        </meta>
+    </head>
+    <main id="main">
+  
+        <h1 id="title">Galileo Galilei</h1>
+        <p>Father of modern astronomy. Father of modern science. Father of modern physics </p>
+
+        <figure id="img-div">
+            <img id="image" src="https://upload.wikimedia.org/wikipedia/commons/thumb/d/d4/Justus_Sustermans_-_Portrait_of_Galileo_Galilei%2C_1636.jpg/472px-Justus_Sustermans_-_Portrait_of_Galileo_Galilei%2C_1636.jpg"
+       alt="picture of Galileo Galilei"
+         />
+            <figcaption id="img-caption"> Picture of the father of modern science Galileo Galilei</figcaption> 
+     
+        </figure>
+        <section id="tribute-info">
+            <h3 id="headline">History of Galileo Galilei</h3>
+            <ul>
+                <li>Galileo Galilei was born on <strong>15 February 1564</strong> near Pisa, the son of a musician.</li> 
+                <li>He began to study medicine at the University of Pisa but changed to philosophy and mathematics.</li> 
+                <li><strong>In 1589</strong>, he became professor of mathematics at Pisa.</li> 
+                <li><strong>In 1592</strong>, he moved to become mathematics professor at the University of Padua, a position he held until <strong>1610</strong>.</li> 
+                <li>During this time he worked on a variety of experiments, including the speed at which different objects fall, mechanics and pendulums.</li>
+                <li><strong>In 1609</strong>, Galileo heard about the invention of the telescope in Holland. Without having seen an example, he constructed a superior version and made many astronomical discoveries. These included mountains and valleys on the surface of the moon, sunspots, the four largest moons of the planet Jupiter and the phases of the planet Venus. His work on astronomy made him famous and he was appointed court mathematician in Florence.</li>
+                <li><strong>In 1614</strong>, Galileo was accused of heresy for his support of the Copernican theory that the sun was at the centre of the solar system. This was revolutionary at a time when most people believed the Earth was in this central position.</li> 
+                <li><strong>In 1616</strong>, he was forbidden by the church from teaching or advocating these theories.</li>
+                <li><strong>In 1632</strong>, he was again condemned for heresy after his book 'Dialogue Concerning the Two Chief World Systems' was published. This set out the arguments for and against the Copernican theory in the form of a discussion between two men. Galileo was summoned to appear before the Inquisition in Rome. He was convicted and sentenced to life imprisonment, later reduced to permanent house arrest at his villa in Arcetri, south of Florence. He was also forced to publicly withdraw his support for Copernican theory. Although he was now going blind he continued to write.</li> 
+                <li><strong>In 1638</strong>, his 'Discourses Concerning Two New Sciences' was published with Galileo's ideas on the laws of motion and the principles of mechanics.           </li> 
+                <li>Galileo died in Arcetri on <strong>8 January 1642</strong>.
+                </li>
+            </ul>
+            <blockquote cite="https://www.goodreads.com/author/quotes/14190.Galileo_Galilei"><body><p>"There are those who reason well, but they are greatly outnumbered by those who reason badly.”</p>
+                     <cite>--Galileo Galilei</cite>
+                     </blockquote>
+                                                                                   <h3>Read more about the <a id="tribute-link" href="https://en.wikipedia.org/wiki/Galileo_Galilei"
+                                                                                   target="_blank"> Astronomer Galileo Galilei</a>. </h3>
+            <h4>Sign up with your email to get more of our newsletter</h4>
+            <form action="#">
+                <input type="text" placeholder="email address" required> <br>
+                <input type="alphanumeric" placeholder="password" required> <br>
+                <button id="Register">Register</button>
+            </form>
+        </section>
+    </main>
+</html>
+
+
+
+
